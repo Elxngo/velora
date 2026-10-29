@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Velora Privacy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23215e4b'/%3E%3Cpath d='M9 12l11 18 11-18h-7l-4 8-4-8z' fill='%23c7f4b2'/%3E%3C/svg%3E">
+<style>
+  @font-face{font-family:'DM Sans';src:url('./vendor/dm-sans.woff2') format('woff2');font-weight:100 1000;font-display:swap}
+  @font-face{font-family:'Manrope';src:url('./vendor/manrope.woff2') format('woff2');font-weight:200 800;font-display:swap}
+  :root{--bg:#f5f7f4;--card:#fff;--ink:#263e35;--muted:#6f7e69;--line:#e3e9dd;--accent:#316f50}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 'DM Sans',system-ui,sans-serif;padding:40px max(16px,env(safe-area-inset-left,0px)) 60px max(16px,env(safe-area-inset-right,0px))}
+  main{max-width:680px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px clamp(20px,5vw,44px)}
+  h1,h2{font-family:Manrope,'DM Sans',sans-serif;letter-spacing:-.4px;line-height:1.25}
+  h1{font-size:30px;margin:0 0 4px}
+  h2{font-size:17px;margin:28px 0 6px}
+  p,li{color:var(--muted)}
+  ul{padding-left:20px}
+  a{color:var(--accent)}
+  .date{font-size:13px;color:#93a08b;margin:0 0 20px}
+  .back{display:inline-block;margin-bottom:22px;font-size:14px;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Back to Velora</a>
+  <h1>Velora privacy</h1>
+  <p class="date">Last updated 29 October 2026</p>
+  <p>Velora is a free browser game made by Elango. It has no server and no database. Everything below happens inside your own browser.</p>
+
+  <h2>Your game progress</h2>
+  <p>Your progress is saved in your browser's local storage on the device you play on. It is never uploaded anywhere. Other players can't see it, and nor can we.</p>
+
+  <h2>Signing in with Google (optional)</h2>
+  <ul>
+    <li>You can play as a guest without signing in.</li>
+    <li>If you choose "Continue with Google", Google shares your name, profile picture and an account ID with the game, in your browser only.</li>
+    <li>The game uses them to label your save and show your picture. It keeps a separate save for each Google account on your device.</li>
+    <li>Your email address and password are never stored, and nothing is sent to us or to anyone else.</li>
+    <li>The sign-in itself is handled by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+  </ul>
+
+  <h2>What the game loads</h2>
+  <p>The game, its images and its fonts are served from this site. The Google sign-in button is loaded from accounts.google.com when sign-in is available. There are no ads, analytics or tracking.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li>In the game, open Settings and choose "Start over" to reset your save.</li>
+    <li>To remove everything, clear this site's data in your browser settings.</li>
+    <li>To disconnect Google, visit <a href="https://myaccount.google.com/connections" rel="noopener">your Google account connections</a> and remove Velora.</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <p>Open an issue on the game's page at <a href="https://github.com/Elxngo/velora">github.com/Elxngo/velora</a>.</p>
+</main>
+</body>
+</html>
