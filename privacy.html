@@ -27,27 +27,27 @@
   <a class="back" href="./">← Back to Velora</a>
   <h1>Velora privacy</h1>
   <p class="date">Last updated 29 October 2026</p>
-  <p>Velora is a free browser game made by Elango. It has no server and no database. Everything below happens inside your own browser.</p>
+  <p>Velora is a free browser game made by Elango. There are no ads, analytics or tracking.</p>
 
-  <h2>Your game progress</h2>
-  <p>Your progress is saved in your browser's local storage on the device you play on. It is never uploaded anywhere. Other players can't see it, and nor can we.</p>
+  <h2>Playing as a guest</h2>
+  <p>Your progress is saved in your browser's local storage on the device you play on. It is never uploaded. Other players can't see it.</p>
 
   <h2>Signing in with Google (optional)</h2>
   <ul>
-    <li>You can play as a guest without signing in.</li>
-    <li>If you choose "Continue with Google", Google shares your name, profile picture and an account ID with the game, in your browser only.</li>
-    <li>The game uses them to label your save and show your picture. It keeps a separate save for each Google account on your device.</li>
-    <li>Your email address and password are never stored, and nothing is sent to us or to anyone else.</li>
-    <li>The sign-in itself is handled by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+    <li>If you choose "Continue with Google", sign-in is handled by Google Firebase Authentication. The game receives your name, profile picture and an account ID. It does not use your email address, and it never sees your password.</li>
+    <li>Your game save (cash, businesses, purchases and other game data) is stored in Google Cloud Firestore under your account, so you can continue on any device where you sign in.</li>
+    <li>Database rules allow only you to read or change your save. Other players can't see it.</li>
+    <li>A random device ID is stored with your save so the game knows which device saved last.</li>
+    <li>Google processes this data under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> and the <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy terms</a>.</li>
   </ul>
 
   <h2>What the game loads</h2>
-  <p>The game, its images and its fonts are served from this site. The Google sign-in button is loaded from accounts.google.com when sign-in is available. There are no ads, analytics or tracking.</p>
+  <p>The game, its images and its fonts are served from this site. The Firebase sign-in and database code is loaded from Google (www.gstatic.com) when you play.</p>
 
   <h2>Deleting your data</h2>
   <ul>
-    <li>In the game, open Settings and choose "Start over" to reset your save.</li>
-    <li>To remove everything, clear this site's data in your browser settings.</li>
+    <li>In the game, open Settings and choose "Delete cloud save" to remove your save from Google Cloud.</li>
+    <li>Choose "Start over" to reset your game, and clear this site's data in your browser to remove everything on this device.</li>
     <li>To disconnect Google, visit <a href="https://myaccount.google.com/connections" rel="noopener">your Google account connections</a> and remove Velora.</li>
   </ul>
 
