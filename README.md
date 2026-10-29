@@ -39,7 +39,7 @@ One game day lasts one minute. Use the 3× button to speed things up.
 
 ## Your progress
 
-Your game saves automatically in your browser on the device you play on. Signing in with Google is optional and keeps a separate save for each account on that device. See the [privacy page](https://elxngo.github.io/velora/privacy.html).
+Sign in with Google and your progress saves to your account, so you can carry on from any phone or computer. Guests can play too, but a guest save stays in that one browser. See the [privacy page](https://elxngo.github.io/velora/privacy.html).
 
 ## Credits
 
